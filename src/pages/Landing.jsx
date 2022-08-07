@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 import Membership from '../pages/Membership'
 import LandingSection from "../components/LandingSections";
 import SideBar2 from "../components/SideBar";
-
+import SignIn from '../pages/SignIn'
 
 
 const Landing = () => {
@@ -16,6 +16,7 @@ const Landing = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/findclub" element={<LandingSection />} />
         <Route exact path="/membership" element={<Membership />} />
+        <Route exact path="/signin" element={<SignIn />} />
       </Routes>
     </LandingWrapper>
     </>

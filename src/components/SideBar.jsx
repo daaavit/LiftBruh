@@ -44,7 +44,12 @@ const SideBar = () => {
         <UniMenuBox>
           <TextBoxWithIcon>
             <AiOutlineLogin size={40} style={{ color: "#8D82C4" }} />
-            Sign In
+            <Link
+              to="/signin"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Sign In
+            </Link>
           </TextBoxWithIcon>
         </UniMenuBox>
       </MenuBox>

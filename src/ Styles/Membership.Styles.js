@@ -114,13 +114,13 @@ export const Card = styled.div`
       align-items: center;
       justify-content: space-evenly;
       height: 80%;
-      width: 30%;
+      width: 35%;
       max-height: 650px;
       max-width: 350px;
       background: #8D82C4;
       border-radius: 20px;
       margin: 0% 2% 0% 15%;
-      filter: drop-shadow(7px 11px 10px rgba(121, 121, 121, 0.52));
+      box-shadow: inset -2px -2px 4px #000000,   inset 2px 2px 7px  #C5C5C5 !important;
       
 `
 
@@ -135,6 +135,8 @@ export const CardsHeading = styled.div`
     height: 10%;
     width: 90%;
     color: white;
+    border-bottom: 1px dashed lightgray;
+
 
 `
 
@@ -169,6 +171,8 @@ export const PricingBox = styled.div`
     justify-content: center;
     height: 20%;
     width: 95%;
+    border-bottom: 1px dashed lightgray;
+
 
 `
 
