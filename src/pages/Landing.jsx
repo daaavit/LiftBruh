@@ -10,7 +10,6 @@ import SignIn from '../pages/SignIn'
 
 const Landing = () => {
   return (<>
-  <SideBar2/>
     <LandingWrapper>
       <Routes>
         <Route exact path="/" element={<Home />} />

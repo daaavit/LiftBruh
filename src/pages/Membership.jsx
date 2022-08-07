@@ -18,9 +18,12 @@ import {
   Button,
   
 } from "../ Styles/Membership.Styles";
+import SideBar from '../components/SideBar'
 
 const Membership = () => {
   return (
+    <>
+    <SideBar/>
     <MembershipWrapper>
       <HeadingWrapper>
         <Heading>PLANS AND PRICING</Heading>
@@ -63,6 +66,7 @@ const Membership = () => {
         </Card>
       </CardsWrapper>
     </MembershipWrapper>
+    </>
   );
 };
 

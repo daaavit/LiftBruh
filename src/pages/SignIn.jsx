@@ -21,11 +21,13 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";
-
+import SideBar from '../components/SideBar'
 
 
 const SignIn = () => {
   return (
+    <>
+    <SideBar/>
     <MainWrapper>
       <SignInBox>
         <Heading>Sign In</Heading>
@@ -68,6 +70,7 @@ const SignIn = () => {
         <TextForCreateAcount>Not registred?<span style={{fontWeight:"bold", cursor: 'pointer', }}>Create account</span></TextForCreateAcount>
       </SignInBox>
     </MainWrapper>
+    </>
   );
 };
 

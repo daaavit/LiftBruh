@@ -1,4 +1,4 @@
-import React from "react";
+import {ReactComponentElement, useState, useEffect} from "react";
 import emailjs from "emailjs-com";
 import {
   HomeWrapper,
@@ -59,6 +59,21 @@ const Home = () => {
     e.target.reset();
   };
 
+  const useWindowSize = () => {
+    const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
+    useEffect(() => {
+      const resizeHandler = () => {
+        setSize([window.innerHeight, window.innerWidth]);
+      };
+      window.addEventListener("resize", resizeHandler);
+      return () => {
+        window.removeEventListener("resize", resizeHandler);
+      };
+    }, []);
+    return size;
+  };
+  const [height, width] = useWindowSize();
+
   return (
     <HomeWrapper>
       <SideBar />
@@ -91,7 +106,7 @@ const Home = () => {
               style={{ width: "100%", height: "100%" }}
               src="https://media.istockphoto.com/videos/man-using-the-kettlebell-video-id1091704926"
               alt="Man using the kettlebel"
-              controls={true}
+              controls={false}
               controlsList="nodownload"
               autoPlay={true}
               loop={true}
@@ -125,7 +140,7 @@ const Home = () => {
               style={{ width: "100%", height: "100%" }}
               src="https://media.istockphoto.com/videos/building-muscles-one-rep-at-a-time-video-id1007250260"
               alt="Man using the kettlebel"
-              controls={true}
+              controls={false}
               controlsList="nodownload"
               autoPlay={true}
               loop={true}
@@ -139,7 +154,7 @@ const Home = () => {
               style={{ width: "100%", height: "100%" }}
               src="https://media.istockphoto.com/videos/small-business-concept-many-training-machines-in-an-empty-gym-video-id1227517584"
               alt="Man using the kettlebel"
-              controls={true}
+              controls={false}
               controlsList="nodownload"
               autoPlay={true}
               loop={true}
