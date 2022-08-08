@@ -2,9 +2,15 @@ import styled from "styled-components";
 
 export const LandingSectionBox = styled.div`
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     height: 100%;
     width: 100%;
+
+    @media(max-width: 750px){
+        display: flex;
+        height: 180vh;
+    }
 
 `
 
@@ -15,6 +21,15 @@ export const StepsBox = styled.div`
     width: 100%;
     max-height: 170px;
 
+    @media(max-width: 750px) {
+        display: flex;
+        background: #8D82C4;
+        
+     
+    }
+    
+
+
 `
 
 export const UniStep = styled.div`
@@ -24,6 +39,11 @@ export const UniStep = styled.div`
     justify-content: center;
     height: 90%;
     width: 15%;
+
+    @media(max-width: 750px){
+        display: flex;
+        height: 30%;
+    }
 
 `
 
@@ -51,6 +71,13 @@ export const FirstNumbersForStep = styled.div`
     border-radius: 200px;
     border: 0.7px solid black;
 
+    @media(max-width: 750px){
+        display: flex;
+        font-size: 1em;
+        height: 50%;
+    }
+
+
 
 `
 
@@ -68,6 +95,12 @@ export const NumbersForStep = styled.div`
     border-radius: 200px;
     border: 0.7px solid lightgray;
 
+    @media(max-width: 750px){
+        display: flex;
+        font-size: 1em;
+        height: 50%;
+    }
+
 
 `
 
@@ -79,6 +112,11 @@ export const TextForSeps = styled.div`
     width: 95%;
     font-size: 1.2em;
     color: lightgray;
+
+    @media(max-width: 750px){
+        display: flex;
+        font-size: 0.8em;
+    }
 
 
 `
@@ -92,6 +130,11 @@ export const FirstTextForSeps = styled.div`
     font-size: 1.2em;
     color: black;
 
+    @media(max-width: 750px){
+        display: flex;
+        font-size: 0.8em;
+    }
+
 
 `
 
@@ -101,6 +144,12 @@ export const FindOnMapWrapper = styled.div`
     width: 100%;
     background: pink;
 
+    @media(max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        max-height: 200vh;
+    }
+
 `
 
 export const ZipAndResultBox = styled.div`
@@ -108,7 +157,12 @@ export const ZipAndResultBox = styled.div`
     flex-direction: column;
     height: 100%;
     width: 50%;
-   
+    
+    @media(max-width: 750px) {
+        display: flex;
+        height: 50%;
+        width: 100%;
+    }
 
 `
 
@@ -116,6 +170,12 @@ export const MapBox = styled.div`
     display: flex;
     height: 100%;
     width: 50%;
+
+    @media(max-width: 750px) {
+        display: flex;
+        height: 80vh;
+        width: 100%;
+    }
 
 `
 
@@ -172,6 +232,11 @@ export const ResultHeading = styled.div`
     font-weight: bold;
     letter-spacing: 0.1em;
     color: white;
+
+    @media(max-width: 750px){
+        display: flex;
+        width: 80%;
+    }
 `
 
 export const ResultAdress = styled.div`
@@ -184,6 +249,12 @@ export const ResultAdress = styled.div`
     letter-spacing: 0.1em;
     color: white;
     margin: 10px 0px 0px 20px;
+
+    @media(max-width: 750px){
+        display: flex;
+        width: 80%;
+
+    }
 `
 
 export const IconWithPhone = styled.div`
@@ -220,6 +291,11 @@ export const ZipInfo = styled.div`
     letter-spacing: 0.1em;
     color: white;
 
+    @media(max-width: 750px){
+        display: flex;
+    }
+
+
 
 `
 
@@ -249,6 +325,11 @@ export const Input = styled.input`
         color: lightgray;
         font-size: 1em;
 
+        @media(max-width: 750px){
+            font-size: 0.8em;
+        }
+
+
     }
 
 
@@ -271,6 +352,10 @@ export const Button = styled.button`
     letter-spacing: 0.1em;
     cursor: pointer;
 
+    @media(max-width: 750px){
+        display: flex;
+        font-size: 1.2em;
+    }
 
 
     :hover {
