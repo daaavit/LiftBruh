@@ -1,152 +1,44 @@
 import styled from "styled-components";
-import {Location} from '@styled-icons/entypo/Location'
 import {Dumbbell} from '@styled-icons/fa-solid/Dumbbell'
+import {ArrowRightCircle} from '@styled-icons/bootstrap/ArrowRightCircle'
+import {ArrowLeftCircle} from '@styled-icons/bootstrap/ArrowLeftCircle'
 
 
 
-
-export const MembershipWrapper = styled.div`
+export const SliderWrapper = styled.div`
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: auto;
+    justify-content: space-between;
+    height: 80vh;
     width: 100vw;
-
-    @media(max-width: 750px) {
-        display: flex;
-        height: 130vh;
-    }
-
-
-
-`
-
-export const HeadingWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    height: 30vh;
-    width: 50vw;
+    background: #9CC4B2;
+    border-radius: 20px;
     
     @media(max-width: 750px) {
-        display: flex;
-        width: 100%;
-    }
-
-
-`
-
-export const Heading = styled.div`
-    display: flex;
-    font-size: 2em;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    align-items: center;
-    justify-content: center;
-    height: 30%;
-    width: 80%;
-    color: #153B50;
-    
-
-    @media(max-width: 750px) {
-        display: flex;
-        font-size: 1.8em;
-        width: 90%;
-    }
-
-  
-
-`
-export const ChoosenLocaiton = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    width: 80%;
-    border-radius: 50px;
-    border: 1px solid lightgray;
-
-
-   
-    :hover {
-        box-shadow: inset 0 0 0 150px #D80286;
-        -webkit-transition: ease-out 0.8s;
-        -moz-transition: ease-out 0.8s;
-         transition: ease-out 0.8s;
-      }
-
-      @media(max-width: 750px) {
-        display: flex;
-        width: 95%;
-    }
-
-
-`   
-
-export const LocationText = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    height: 80%;
-    width: 70%;
-    color: #8D82C4;
-
-    @media(max-width: 750px) {
-        display: flex;
-        font-size: 1.2em;
-    }
-`   
-
-export const LocationIcon = styled(Location)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60%;
-    width: 20%;
-    border-right: 1px solid lightgray;
-    color: #153B50;
-
-    @media(max-width: 750px) {
-        display: flex;
-        font-size: 1em;
-        width: 20%;
-        height: 50%;
-    }
-`   
-
-
-
-export const PromoCode = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    height: 15%;
-    width: auto;
-    border-bottom: 2px solid #8D82C4;
-    color: #153B50;
-
-
-`
-
-export const CardsWrapper = styled.div`
       display: flex;
-      align-items: center;
-      height: 100vh;
-      width: 100vw;
-      background: #9CC4B2;
-      border-radius: 20px;
-      
+      border-radius: 0;
+    }
 
-      @media(max-width: 750px) {
-        display: flex;
-        border-radius: 0;
-      }
 `
 
+export const LeftArrow = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 20%;
+
+`
+
+
+export const RightArrow = styled.div`
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 20%;
+
+`
 
 export const Card = styled.div`
       display: flex;
@@ -154,12 +46,11 @@ export const Card = styled.div`
       align-items: center;
       justify-content: space-evenly;
       height: 80%;
-      width: 35%;
+      width: 55%;
       max-height: 650px;
       max-width: 350px;
       background: #8D82C4;
       border-radius: 20px;
-      margin: 0% 2% 0% 15%;
       box-shadow: inset -2px -2px 4px #000000,   inset 2px 2px 7px  #C5C5C5 !important;
       
 `
@@ -264,5 +155,29 @@ export const Button = styled.button`
         -moz-transition: ease-out 0.8s;
          transition: ease-out 0.8s;
       }
+
+`
+
+
+export const IconLeft = styled(ArrowLeftCircle)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    color: white;
+      
+
+`
+
+
+export const IconRight = styled(ArrowRightCircle)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    color: white;
+  
 
 `

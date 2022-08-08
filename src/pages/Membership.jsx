@@ -20,6 +20,8 @@ import {
 } from "../ Styles/Membership.Styles";
 import SideBar from '../components/SideBar'
 import HamMenu from "../components/HamMenu";
+import SliderCard from '../components/SiderCards'
+import SliderCards from "../components/SiderCards";
 
 
 const Membership = () => {
@@ -38,10 +40,13 @@ const Membership = () => {
   };
 
 
+  
   const [height, width] = useWindowSize();
+
+
   return (
     <>
-    <SideBar/>
+     {width < 750 ? <HamMenu /> : <SideBar/>}
     <MembershipWrapper>
       <HeadingWrapper>
         <Heading>PLANS AND PRICING</Heading>
@@ -52,6 +57,7 @@ const Membership = () => {
         <PromoCode>Have a Promo Code?</PromoCode>
       </HeadingWrapper>
       <CardsWrapper>
+        {width < 750 ? (<SliderCards/>) : (<>
         <Card>
           <CardsHeading>Gym Bruh</CardsHeading>
           <Info>Best for gym buddies</Info>
@@ -81,7 +87,9 @@ const Membership = () => {
             <PriceText>Unlimited/ Per Month</PriceText>
           </PricingBox>
           <Button>Buy</Button>
-        </Card>
+        </Card> 
+        </>
+        )}
       </CardsWrapper>
     </MembershipWrapper>
     </>
