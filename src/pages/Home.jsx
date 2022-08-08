@@ -36,6 +36,7 @@ import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
 import SideBar from "../components/SideBar";
+import HamMenu from "../components/HamMenu";
 
 const Home = () => {
   const sendEmail = (e) => {
@@ -76,8 +77,8 @@ const Home = () => {
 
   return (
     <HomeWrapper>
-      <SideBar />
       <InfoWrapper>
+      {width < 750 ? <HamMenu /> : <SideBar/>}
         <IntroBox>
           <FirstIntroHeading>Do you even lift bruh?</FirstIntroHeading>
           <FirstIntroText>

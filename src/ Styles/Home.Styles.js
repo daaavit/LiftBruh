@@ -5,6 +5,12 @@ export const HomeWrapper = styled.div`
     flex-direction: row;
     height: 100vh;
     width: 100vw;
+    max-wdith: 100%;
+    @media (max-width: 750px) {
+        display: flex;
+        height: 640vh;
+        width: 100vw;
+    }
   
 
 `
@@ -14,6 +20,14 @@ export const InfoWrapper = styled.div`
     width: 100%;
     max-height: 2900px;
     height: 290vh;
+
+    @media (max-width: 750px) {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        max-height: 10000vh;
+    }
+  
 
 `
 
@@ -27,6 +41,15 @@ export const IntroBox = styled.div`
     width: 100%;
     height: 40vh;
     background: #8D82C4;
+
+
+    @media (max-width: 750px) {
+        display: flex;
+        align-items: center;
+        max-height: 4000px;
+        height: 50vh;
+        width: 100%;
+    }
     
 
 `
@@ -44,6 +67,17 @@ export const FirstIntroHeading = styled.div`
     margin-left: 15%;
     border-bottom: 3px solid white;
 
+
+    @media (max-width: 750px) {
+        display: flex;
+        font-size: 1.5em;
+        width: 80%;
+        margin: 0%;
+    }
+  
+
+
+
 `
 
 export const FirstIntroText = styled.div`
@@ -55,6 +89,15 @@ export const FirstIntroText = styled.div`
     letter-spacing: 0.1em;
     color: white;
     margin-left: 15%;
+
+    @media (max-width: 750px) {
+        display: flex;
+        font-size: 1em;
+        width: 80%;
+        height: 60%;
+        margin: 0;
+    }
+  
 
 `
 
@@ -69,6 +112,15 @@ export const SecondIntroBox = styled.div`
      width: 100%;
      height: 40vh;
      background: #9CC4B2;
+
+     @media (max-width: 750px) {
+        display: flex;
+        align-items: center;
+        max-height: 4000px;
+        height: 50vh;
+        width: 100%;
+    }
+    
 
 `
 
@@ -85,6 +137,14 @@ export const SecondIntroHeading = styled.div`
     margin-right: 4%;
     border-bottom: 3px solid white;
 
+    @media (max-width: 750px) {
+        display: flex;
+        font-size: 1.5em;
+        width: 80%;
+        margin: 0%;
+    }
+  
+
 `
 export const SecondIntroText = styled.div`
     display: flex;
@@ -96,6 +156,14 @@ export const SecondIntroText = styled.div`
     color: white;
     margin-right: 4%;
 
+    @media (max-width: 750px) {
+        display: flex;
+        font-size: 1em;
+        width: 80%;
+        height: 60%;
+        margin: 0;
+    }
+
 `
 
 export const TextWithVideo = styled.div`
@@ -105,6 +173,15 @@ export const TextWithVideo = styled.div`
     max-height: 400px;
     background: #153B50;
 
+    @media (max-width: 750px) {
+        display: flex;
+        height: 80vh;
+        width: 100vw;
+        flex-direction: column;
+        max-height: 1000vh;
+       
+    }
+
 `
 
 export const VideoArea = styled.div`
@@ -112,6 +189,15 @@ export const VideoArea = styled.div`
     height: 100%;
     width: 30%;
     margin-left: 15%;
+
+    @media (max-width: 750px) {
+        display: flex;
+        height: 35%;
+        width: 100vw;
+        max-height: 4000px;
+        margin-left: 0%;
+       
+    }
 
 
 `
@@ -123,6 +209,16 @@ export const TextForVideo = styled.div`
     flex-direction: column;
     height: 100%;
     width: 60%;
+
+    @media (max-width: 750px) {
+        display: flex;
+        justify-content: flex-start;
+        height: 70%;
+        width: 100vw;
+        max-height: 4000px;
+        margin: 0;
+       
+    }
 `
 
 export const VideoHeading = styled.div`
@@ -161,6 +257,17 @@ export const RightTextForVideo = styled.div`
     height: 100%;
     width: 60%;
     margin-left: 10%;
+
+    @media (max-width: 750px) {
+        display: flex;
+        justify-content: flex-start;
+        height: 60vh;
+        width: 100vw;
+        flex-direction: column;
+        max-height: 4000px;
+        margin: 0;
+       
+    }
 `
 
 export const RightVideoHeading = styled.div`
@@ -187,12 +294,29 @@ export const RightVideoText = styled.div`
     letter-spacing: 0.1em;
     color: white;
 
+    @media (max-width: 750px) {
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        max-height: 4000px;
+       
+    }
+
 `
 export const RightVideoArea = styled.div`
     display: flex;
     height: 100%;
     width: 30%;
     margin-right: 5%;
+
+    @media (max-width: 750px) {
+        height: 35%;
+        width: 100vw;
+        max-height: 4000px;
+        margin: 0;
+        margin-bottom: 20%;
+       
+    }
 
 
 `
@@ -206,6 +330,14 @@ export const ButtonArea = styled.div`
     width: 100%;
     height: 50vh;
     background: #154E50;
+
+    @media(max-width: 750px){
+        display: flex;
+        align-items: center;
+        max-height: 100vh;
+        height: 100vh;
+        width: 100vw;
+    }
     
 
 `
@@ -223,6 +355,14 @@ export const ButtonHeading = styled.div`
     margin-left: 15%;
     border-bottom: 3px solid white;
 
+    @media(max-width: 750px){
+        display: flex;
+        max-height: 100vh;
+        height: 10%;
+        width: 80%;
+        margin: 0%;
+    }
+
 `
 
 export const ButtonText = styled.div`
@@ -234,6 +374,16 @@ export const ButtonText = styled.div`
     letter-spacing: 0.1em;
     color: white;
     margin-left: 15%;
+
+    @media(max-width: 750px){
+        display: flex;
+        font-size: 1.2em;
+        max-height: 100vh;
+        height: 40%;
+        width: 95%;
+        margin: 0%;
+    }
+
 
 `
 
@@ -258,6 +408,15 @@ export const Button = styled.button`
          transition: ease-out 0.8s;
       }
 
+      @media(max-width: 750px){
+        display: flex;
+        align-items: center;
+        max-height: 100vh;
+        height: 10%;
+        width: 40%;
+        margin: 0%;
+    }
+
 `
 
 export const ContactBox = styled.div`
@@ -268,21 +427,30 @@ export const ContactBox = styled.div`
       max-height: 500px;
       background: #153B50;
 
+      @media (max-width: 750px) {
+        display: flex;
+        height: 200vh;
+        width: 100vw;
+        flex-direction: column;
+        max-height: 4000px;
+    }
+
 
 `
 export const ContactFromContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 90%;
   width: 40%;
   margin-left: 15%;
-  @media(max-width: 500px){
+
+  @media (max-width: 750px) {
     display: flex;
-    flex-direction: row;
-    height: 80vh;
-    // border: 3px solid red;
-  }
+    height: 50%;
+    width: 95%;
+    flex-direction: column;
+    max-height: 4000px;
+    margin-left: 0;
+   
 `;
 
 
@@ -307,6 +475,15 @@ export const Input = styled.input`
     height: 10%;
     width: 80%;
     border-bottom: 1px solid lightGray;
+
+    @media(max-width: 500px){
+        display: flex;
+        height: 5%;
+        width: 90%;
+      
+      }
+    
+
 `;
 
 export const StyledTextArea = styled.textarea`
@@ -336,6 +513,17 @@ cursor: pointer;
      transition: ease-out 0.8s;
   }
 
+  @media (max-width: 750px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 40%;
+    max-height: 4000px;
+    margin: 0;
+   
+}
+
 `
 
 
@@ -348,10 +536,20 @@ export const InfoContainer = styled.div`
     width: 40%;
     @media(max-width: 500px){
       display: flex;
+
       flex-direction: row;
       height: 80vh;
       // border: 3px solid red;
   }
+
+  @media (max-width: 750px) {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    max-height: 4000px;
+   
+}
 `;
 
 
