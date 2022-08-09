@@ -162,6 +162,10 @@ export const Card = styled.div`
       margin: 0% 2% 0% 15%;
       box-shadow: inset -2px -2px 4px #000000,   inset 2px 2px 7px  #C5C5C5 !important;
       
+
+
+
+
 `
 
 
