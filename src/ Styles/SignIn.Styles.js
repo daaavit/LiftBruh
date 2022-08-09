@@ -5,6 +5,7 @@ import Pic from '../assets/weights.png'
 
 export const MainWrapper = styled.div`
     display: flex;
+    background: red;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
@@ -32,6 +33,11 @@ export const SignInBox = styled.div`
     max-height: 650px;
 
     margin-top: 3%;
+
+    @media(max-width: 750px) {
+        display: flex;
+       margin-top: 0%;
+    }
     
 
     background: rgba(116, 55, 55, 0.02);

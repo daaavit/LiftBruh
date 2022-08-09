@@ -28,6 +28,7 @@ export const HeadingWrapper = styled.div`
     flex-direction: column;
     height: 30vh;
     width: 50vw;
+    margin-left: 15%;
     
     @media(max-width: 750px) {
         display: flex;
