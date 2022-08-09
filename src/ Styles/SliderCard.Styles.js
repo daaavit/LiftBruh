@@ -9,9 +9,8 @@ export const SliderWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80vh;
+    height: 70vh;
     width: 100vw;
-    background: #9CC4B2;
     border-radius: 20px;
     
     @media(max-width: 750px) {
@@ -51,7 +50,15 @@ export const Card = styled.div`
       max-width: 350px;
       background: #8D82C4;
       border-radius: 20px;
-      box-shadow: inset -2px -2px 4px #000000,   inset 2px 2px 7px  #C5C5C5 !important;
+    //   box-shadow: inset -2px -2px 4px #000000,   inset 2px 2px 7px  #C5C5C5 !important;
+
+    background: rgba(116, 55, 55, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(116, 55, 55, 0.76);
+
       
 `
 
@@ -178,6 +185,5 @@ export const IconRight = styled(ArrowRightCircle)`
     height: 50%;
     width: 100%;
     color: white;
-  
 
 `

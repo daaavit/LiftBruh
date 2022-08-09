@@ -16,11 +16,13 @@ import {
   Price,
   PriceText,
   Button,
+  VideoWrapper,
 } from "../ Styles/Membership.Styles";
 import SideBar from "../components/SideBar";
 import HamMenu from "../components/HamMenu";
 import SliderCard from "../components/SiderCards";
 import SliderCards from "../components/SiderCards";
+import PullVideo from '../assets/Pull.mp4'
 
 const Membership = () => {
   const useWindowSize = () => {
@@ -35,21 +37,6 @@ const Membership = () => {
       };
     }, []);
     return size;
-  };
-
-  const BackieVideo = () => {
-    return (
-      <video
-        data-testid="video-asset"
-        style={{ width: "100%", height: "100%" }}
-        src="https://media.istockphoto.com/videos/man-using-the-kettlebell-video-id1091704926"
-        alt="Man using the kettlebel"
-        controls={false}
-        controlsList="nodownload"
-        autoPlay={true}
-        loop={true}
-      ></video>
-    );
   };
 
   const [height, width] = useWindowSize();
@@ -105,6 +92,7 @@ const Membership = () => {
             </>
           )}
         </CardsWrapper>
+        <VideoWrapper autoPlay loop muted src={PullVideo} type="video/mp4"/>
       </MembershipWrapper>
     </>
   );

@@ -137,9 +137,8 @@ export const CardsWrapper = styled.div`
       align-items: center;
       height: 100vh;
       width: 100vw;
-      background: #9CC4B2;
       border-radius: 20px;
-      
+   
 
       @media(max-width: 750px) {
         display: flex;
@@ -147,6 +146,19 @@ export const CardsWrapper = styled.div`
       }
 `
 
+
+export const VideoWrapper = styled.video`
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+`
 
 export const Card = styled.div`
       display: flex;
@@ -160,9 +172,14 @@ export const Card = styled.div`
       background: #8D82C4;
       border-radius: 20px;
       margin: 0% 2% 0% 15%;
-      box-shadow: inset -2px -2px 4px #000000,   inset 2px 2px 7px  #C5C5C5 !important;
+    //   box-shadow: inset -2px -2px 4px #000000,   inset 2px 2px 7px  #C5C5C5 !important;
       
-
+    background: rgba(116, 55, 55, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(116, 55, 55, 0.76);
 
 
 

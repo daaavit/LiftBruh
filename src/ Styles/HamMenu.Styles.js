@@ -10,6 +10,7 @@ export const HamMenuWrapper = styled.div`
     position: fixed;
     top: 80%;
     left: 5%;
+    z-index: 1;
     background: rgba(116, 55, 55, 0.02);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
