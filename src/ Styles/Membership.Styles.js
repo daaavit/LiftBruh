@@ -33,6 +33,7 @@ export const HeadingWrapper = styled.div`
     @media(max-width: 750px) {
         display: flex;
         width: 100%;
+        margin-left: 0%
     }
 
 
