@@ -1,4 +1,4 @@
-import {ReactComponentElement, useState, useEffect} from "react";
+import { React, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import {
   HomeWrapper,
@@ -37,6 +37,9 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
 import SideBar from "../components/SideBar";
 import HamMenu from "../components/HamMenu";
+import PullVideo from "../assets/Pull.mp4";
+import Instructor from "../assets/Instructor.mp4";
+import Running from "../assets/Runing.mp4";
 
 const Home = () => {
   const sendEmail = (e) => {
@@ -78,7 +81,7 @@ const Home = () => {
   return (
     <HomeWrapper>
       <InfoWrapper>
-      {width < 750 ? <HamMenu /> : <SideBar/>}
+        {width < 750 ? <HamMenu /> : <SideBar />}
         <IntroBox>
           <FirstIntroHeading>Do you even lift bruh?</FirstIntroHeading>
           <FirstIntroText>
@@ -103,14 +106,12 @@ const Home = () => {
         <TextWithVideo>
           <VideoArea>
             <video
-              data-testid="video-asset"
+              autoPlay
+              loop
+              muted
+              src={PullVideo}
+              type="video/mp4"
               style={{ width: "100%", height: "100%" }}
-              src="https://media.istockphoto.com/videos/man-using-the-kettlebell-video-id1091704926"
-              alt="Man using the kettlebel"
-              controls={false}
-              controlsList="nodownload"
-              autoPlay={true}
-              loop={true}
             ></video>
           </VideoArea>
           <TextForVideo>
@@ -136,29 +137,25 @@ const Home = () => {
             </RightVideoText>
           </RightTextForVideo>
           <RightVideoArea>
-            <video
-              data-testid="video-asset"
+          <video
+              autoPlay
+              loop
+              muted
+              src={Instructor}
+              type="video/mp4"
               style={{ width: "100%", height: "100%" }}
-              src="https://media.istockphoto.com/videos/building-muscles-one-rep-at-a-time-video-id1007250260"
-              alt="Man using the kettlebel"
-              controls={false}
-              controlsList="nodownload"
-              autoPlay={true}
-              loop={true}
             ></video>
           </RightVideoArea>
         </TextWithVideo>
         <TextWithVideo>
           <VideoArea>
-            <video
-              data-testid="video-asset"
+          <video
+              autoPlay
+              loop
+              muted
+              src={Running}
+              type="video/mp4"
               style={{ width: "100%", height: "100%" }}
-              src="https://media.istockphoto.com/videos/small-business-concept-many-training-machines-in-an-empty-gym-video-id1227517584"
-              alt="Man using the kettlebel"
-              controls={false}
-              controlsList="nodownload"
-              autoPlay={true}
-              loop={true}
             ></video>
           </VideoArea>
           <TextForVideo>
@@ -229,12 +226,18 @@ const Home = () => {
                 <MdEmail size={30} style={{ color: "white" }} />
                 EMAIL
               </IconWithText>
-              <IconWithText><a
-          style={{ textDecoration: "none", color: "white", margin: "1%" }}
-          href="mailto:eklesia.brooklyn@gmail.com"
-        >
-         information@untitled.tld
-        </a></IconWithText>
+              <IconWithText>
+                <a
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    margin: "1%",
+                  }}
+                  href="mailto:eklesia.brooklyn@gmail.com"
+                >
+                  information@untitled.tld
+                </a>
+              </IconWithText>
             </InfoBox>
             <InfoBox>
               <IconWithText>
@@ -243,7 +246,7 @@ const Home = () => {
               </IconWithText>
               <IconWithText>(000) 000-0000 x12387</IconWithText>
             </InfoBox>
-            <InfoBox style={{border: 'none'}}>
+            <InfoBox style={{ border: "none" }}>
               <IconWithText>
                 <FaHome size={30} style={{ color: "white" }} />
                 ADRESS
