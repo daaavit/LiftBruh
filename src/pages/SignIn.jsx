@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import {
   MainWrapper,
   SignInBox,
@@ -15,6 +15,7 @@ import {
   TextForCreateAcount,
   IconBoxesForAccounts,
   IconsForAccounts,
+  Img
 } from "../ Styles/SignIn.Styles"
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -22,13 +23,34 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import SideBar from '../components/SideBar'
-
+import HamMenu from '../components/HamMenu'
+import Pic from '../assets/weights.png'
 
 const SignIn = () => {
+  
+  const useWindowSize = () => {
+    const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
+    useEffect(() => {
+      const resizeHandler = () => {
+        setSize([window.innerHeight, window.innerWidth]);
+      };
+      window.addEventListener("resize", resizeHandler);
+      return () => {
+        window.removeEventListener("resize", resizeHandler);
+      };
+    }, []);
+    return size;
+  };
+
+  const [height, width] = useWindowSize();
+
+
+
   return (
     <>
-    <SideBar/>
+    {width < 750 ? <HamMenu /> : <SideBar />}
     <MainWrapper>
+    <Img src={Pic}/>
       <SignInBox>
         <Heading>Sign In</Heading>
         <InputArea>
@@ -36,7 +58,7 @@ const SignIn = () => {
             <IconBox>
               <MdEmail size={20} style={{color: 'white'}}/>
             </IconBox>
-            <UniInputBox placeholder="example@yahoo.com"></UniInputBox>
+            <UniInputBox placeholder="example@yahoo.com" ></UniInputBox>
           </InputBox>
           <InputBox>
             <IconBox>

@@ -1,15 +1,26 @@
 import styled from "styled-components";
+import Pic from '../assets/weights.png'
+
 
 
 export const MainWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100vh;
     width: 100vw;
-    background: #8D82C4;
     align-items: center;
 
 `
+export const Img = styled.img`
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+`
+
 
 export const SignInBox = styled.div`
     display: flex;
@@ -17,17 +28,18 @@ export const SignInBox = styled.div`
     height: 70%;
     width: 30%;
     align-items: center;
-
     max-width: 550px;
     max-height: 650px;
 
     margin-top: 3%;
     
 
-    box-shadow: inset -2px -2px 4px #000000,   inset 2px 2px 7px  #C5C5C5 !important;
-    border: 0.5px #A098C8 solid;
-    border-radius: 20px;
- 
+    background: rgba(116, 55, 55, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(116, 55, 55, 0.76);
 
     @media(max-width: 750px) {
         display: flex;
@@ -84,6 +96,7 @@ height: 100%;
 width: 10%;
 
 
+
 `
 
 export const UniInputBox = styled.input`
@@ -93,7 +106,11 @@ export const UniInputBox = styled.input`
     border-radius: 0px 10px 10px 0px;
     border: none;
     box-shadow: inset -2px -2px 4px #FFFFFF,   inset 2px 2px 7px  #9C9C9C !important;
-    background: #E6E7ED;
+    background: none;
+
+    :placeholder {
+        color: white;
+    }
     
     -webkit-appearance: none;
    
