@@ -46,7 +46,7 @@ export const Heading = styled.div`
     justify-content: center;
     height: 30%;
     width: 80%;
-    color: #153B50;
+    color: white;
     
 
     @media(max-width: 750px) {
@@ -106,7 +106,7 @@ export const LocationIcon = styled(Location)`
     height: 60%;
     width: 20%;
     border-right: 1px solid lightgray;
-    color: #153B50;
+    color: white;
 
     @media(max-width: 750px) {
         display: flex;
@@ -127,7 +127,7 @@ export const PromoCode = styled.div`
     height: 15%;
     width: auto;
     border-bottom: 2px solid #8D82C4;
-    color: #153B50;
+    color: white;
 
 
 `
