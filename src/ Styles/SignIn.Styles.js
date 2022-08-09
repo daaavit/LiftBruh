@@ -5,7 +5,6 @@ import Pic from '../assets/weights.png'
 
 export const MainWrapper = styled.div`
     display: flex;
-    background: red;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
