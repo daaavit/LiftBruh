@@ -78,6 +78,9 @@ const Home = () => {
   };
   const [height, width] = useWindowSize();
 
+
+  console.log(height)
+
   return (
     <HomeWrapper>
       <InfoWrapper>

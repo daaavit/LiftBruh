@@ -41,9 +41,10 @@ const Membership = () => {
 
   const [height, width] = useWindowSize();
 
+
   return (
     <>
-      {width < 750 ? <HamMenu /> : <SideBar />}
+      {width  < 750 ? <HamMenu /> : <SideBar />}
       <MembershipWrapper>
         <HeadingWrapper>
           <Heading>PLANS AND PRICING</Heading>

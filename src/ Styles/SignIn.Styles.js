@@ -19,6 +19,11 @@ export const Img = styled.img`
     width: 100%;
     z-index: -1;
 
+    @media(max-width: 750px) {
+        height: 100vh;
+        width: 100vw;
+    }
+
 `
 
 
