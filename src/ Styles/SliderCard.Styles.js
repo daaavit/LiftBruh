@@ -98,7 +98,7 @@ export const DumbelIcon = styled(Dumbbell)`
       width: 50%;
       color: white;
       :hover {
-      transition: transform .7s  ease-in-out;
+      transition: transform .7s infinit ease-in-out;
       transform: rotate(360deg)
       }
 `

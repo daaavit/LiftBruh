@@ -236,7 +236,7 @@ const Home = () => {
                     color: "white",
                     margin: "1%",
                   }}
-                  href="mailto:eklesia.brooklyn@gmail.com"
+                  href="mailto:daavit@yahoo.com"
                 >
                   information@untitled.tld
                 </a>
